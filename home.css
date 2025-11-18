@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+   
+   background-image: linear-gradient(135deg, #a18cd1, #fbc2eb);
+
+
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    /*background:black;*/
+    color: black;
+     align-items: center;
+   
+}
+
+header nav a{
+     color: purple;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s ease;
+
+}
+.gradient-text {
+    background: linear-gradient(90deg, #000428, #004e92);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+header nav a::before {
+    content: "✦";
+    margin-right: 5px;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: purple;
+    animation: fadeIn 2s ease;
+}
+
+
+
+
+/* Hero Section */
+.hero{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    /*background: white; */
+   background: linear-gradient(to right, #fbc2eb, #a6c1ee); 
+
+    border-radius:50px ;
+    border-width:2px ;
+    border-style:solid;
+    /*border-image: linear-gradient(135deg, #ff9a9e, #a18cd1) 1;*/
+    border-image: linear-gradient(135deg, #ff9a9e, #fecfef, #a1c4fd) 1;
+
+
+
+
+    margin:20px;
+}
+
+.hero img{
+    width: 250px;
+    border-radius: 70%;
+    height:200px;
+    animation: fadeIn 2s ease;
+}
+
+
+.btn{
+    display: inline-block;
+
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-width:2px;
+    border-style:solid;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 70px;
+    animation: fadeIn 2s ease;
+}
+
+/* Skills */
+#skills, #projects, #contact{
+    padding: 40px;
+    /*background: white;*/
+    margin: 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+     border-width:2px ;
+    border-style:solid;
+    /*border-image: linear-gradient(135deg, #ff9a9e, #a18cd1) 1;*/
+    border-image: linear-gradient(135deg, #ff9a9e, #fecfef, #a1c4fd) 1;
+    animation: fadeIn 2s ease;
+   
+}
+
+
+#skills ul{
+    margin-top:10px;
+}
+
+.project-box{
+    /*background: #eee; */
+    padding: 20px;
+     margin-top: 10px;
+    border-radius: 10px;
+}
+#contact i{
+    margin-right:    10px;
+}
+#contact h2{
+    margin-bottom:20px
+}
+/*
+.hero img:hover{
+    background-image:url("emoji.jpg");
+    */
+
+.hero img:hover {
+    content: url("emoji.jpg");
+   
+}    
+#about h2{
+margin-bottom:10px;
+ animation: fadeIn 2s ease;
+}
+#about p{
+
+ animation: fadeIn 2s ease;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
